@@ -2,6 +2,10 @@ plugins {
     id 'java'
 }
 
+subprojects {
+    apply plugin: 'idea'
+}
+
 group 'dev.flanker'
 version '0.0.1-SNAPSHOT'
 

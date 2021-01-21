@@ -1,2 +1,15 @@
+pluginManagement {
+    plugins {
+        id "com.google.protobuf" version "0.8.14"
+    }
+    repositories {
+        gradlePluginPortal()
+        google()
+    }
+}
+
 rootProject.name = 'grpc-dynamite'
 
+include ":grpc-dynamite-api"
+
+project(':grpc-dynamite-api').projectDir = "$rootDir/api" as File
